@@ -1,0 +1,122 @@
+/* * {
+    box-sizing: border-box;
+    outline: 1px solid rgb(255, 255, 255) !important;
+} */
+
+@font-face {
+    font-family: 'ArcadeClassic';
+    src: url('fonts/ARCADECLASSIC.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'ArcadeClassic', Arial,sans-serif !important;
+    background-color:hwb(0 10% 90%) !important;
+}
+
+section {
+    scroll-margin-top: 70px;
+}
+
+/* Desktop hover dropdown with animation */
+@media (min-width: 992px) {
+    .navbar .dropdown-menu {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+        transition: all 0.25s ease;
+    }
+
+    .navbar .dropdown:hover .dropdown-menu {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+.dropdown-menu {
+    background-color: rgba(255, 255, 255, 0.9) !important;
+}
+
+.dropdown-item:hover {
+    background-color: #343a40 !important;
+    color: #ffffff !important;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+}
+
+.display-4 {
+    color: #ffffff !important;
+}
+
+.card {
+    background-color: transparent !important;
+    border: none !important;
+    color: #ffffff !important;
+}
+
+.card-img-top {
+    height: max-content !important;
+    width: 250px !important;
+}
+
+.card-text, .modal-body  {
+    font-family: 'Courier New', Courier, monospace !important;
+}
+
+.btn-xplo, .btn-Lmore {
+    font-style: italic;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    background: transparent;
+    padding: 10px 25px;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-xplo:hover, .btn-Lmore:hover, .btn-mdl:hover {
+    background: #ffffff;
+    color: #222831;
+    box-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+}
+
+body.modal-open {
+    overflow-y: scroll !important;
+    padding-right: 0 !important;
+}
+
+.modal-content {
+    background-color: rgb(26, 26, 26) !important;
+    color: #ffffff !important;
+}
+
+.modal-content .btn-close {
+    filter: invert(100%) grayscale(100%) !important;
+    opacity: 1 !important;
+}
+
+.modal-content .btn-close:hover {
+    background-color: #4f4747 !important;
+    filter: invert(100%) grayscale(100%) !important;
+    opacity: 1 !important;
+}
+
+.modal-content button {
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+    background-color: transparent !important;
+}
+
+.modal-content button:hover {
+    color: #222831 !important;
+    background-color: #ffffff !important;
+}
+
+.scl-icns {
+    height:  35px;
+    width:   35px;
+}

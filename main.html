@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main-style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="src/ship-white.png" type="image/png" />
+    <title>Kalabaw Prod</title>
+  </head>
+  <body>
+    <nav
+      class="navbar fixed-top navbar-expand-lg navbar-dark py-3"
+      style="
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0)
+        );
+      "
+    >
+      <div class="container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand fw-bold">
+          <img src="src/ship-white.png" alt="White Ship Logo" height="50" />
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                data-bs-toggle="dropdown"
+                >Home</a
+              >
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#About">Devs Behind</a></li>
+                <li><a class="dropdown-item" href="#Features">Features</a></li>
+              </ul>
+            </li>
+
+            <a class="nav-item nav-link" href="#Contact">Contact</a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div style="position: relative; z-index: 10">
+      <section
+        class="hero-logo-section d-flex flex-column justify-content-center align-items-center position-relative"
+        style="
+          background: linear-gradient(
+            to top,
+            rgb(26, 26, 26),
+            rgba(0, 0, 0, 0.6)
+          );
+          color: #eeeeee;
+          height: 100vh;
+        "
+      >
+        <video
+          autoplay
+          muted
+          loop
+          class="position-fixed w-100 h-100"
+          style="object-fit: cover; z-index: -1; top: 0; left: 0"
+        >
+          <source src="src/loop-vid.mp4" type="video/mp4" />
+        </video>
+        <div class="container text-center">
+          <img src="src/spc-logo (2).png" height="250" width="500" />
+          <p class="text-center text-white fs-5 my-5">
+            Left, Right, Left, Right, Spacebar, Start!
+          </p>
+          <a href="#About" class="btn btn-outline-light btn-lg btn-xplo"
+            >Explore</a
+          >
+        </div>
+      </section>
+
+      <div style="background-color: rgb(26, 26, 26); padding: 1rem">
+        <section class="container my-5" id="About">
+          <h1 class="display-4 text-center">Devs behind</h1>
+
+          <div class="card-group my-5">
+            <div class="card text-center mb-3">
+              <a href="profile/profile-1.html">
+                <img
+                  src="src/profile-1.png"
+                  class="card-img-top mx-auto d-block img-fluid"
+                  alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title fs-3">Nen</h5>
+              </div>
+            </div>
+
+            <div class="card text-center mb-3">
+              <a href="profile/profile-2.html">
+                <img
+                  src="src/profile-2.png"
+                  class="card-img-top mx-auto d-block img-fluid"
+                  alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title fs-3">ZY</h5>
+              </div>
+            </div>
+
+            <div class="card text-center mb-3">
+              <a href="profile/profile-3.html">
+                <img
+                  src="src/profile-3.png"
+                  class="card-img-top mx-auto d-block img-fluid"
+                  alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title fs-3">Jam</h5>
+              </div>
+            </div>
+
+            <div class="card text-center mb-3">
+              <a href="profile/profile-4.html">
+                <img
+                  src="src/profile-4.png"
+                  class="card-img-top mx-auto d-block img-fluid"
+                  alt="..."
+              /></a>
+              <div class="card-body">
+                <h5 class="card-title fs-3">Nel</h5>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="container my-5 pt-5" id="Features">
+          <h1 class="display-4 text-center">Features</h1>
+          <div class="card-group my-5">
+            <div class="card text-justify mb-3">
+              <div class="card-body">
+                <h5 class="card-title fs-3">Controls</h5>
+                <p class="card-text">
+                  The core gameplay of Space Invaders is centered around simple,
+                  yet highly effective controls.
+                </p>
+                <a
+                  href="#"
+                  class="btn btn-outline-light btn-md btn-Lmore"
+                  data-bs-toggle="modal"
+                  data-bs-target="#featureModal1"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+
+            <div class="card text-justify mb-3">
+              <div class="card-body">
+                <h5 class="card-title fs-3">Types of enemies</h5>
+                <p class="card-text">
+                  The adversaries in Space Invaders consist of three distinct
+                  ranks of pixelated aliens, differentiated by shape and point
+                  value, which are organized into a massive, descending
+                  formation.
+                </p>
+                <a
+                  href="enemy-variations/enemy-variations.html"
+                  class="btn btn-outline-light btn-md btn-Lmore"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+
+            <div class="card text-justify mb-3">
+              <div class="card-body">
+                <h5 class="card-title fs-3">Lives System</h5>
+                <p class="card-text">
+                  Space Invaders features a classic, high-stakes lives system.
+                  The player begins with a limited number of Lives.
+                </p>
+                <a
+                  href=""
+                  class="btn btn-outline-light btn-md btn-Lmore"
+                  data-bs-toggle="modal"
+                  data-bs-target="#featureModal3"
+                  >Learn More</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <footer
+      class="text-center text-lg-start text-white"
+      style="background-color: rgb(17, 17, 17); position: relative; z-index: 10"
+      id="Contact"
+    >
+      <section
+        class="d-flex justify-content-between p-4"
+        style="background-color: rgb(0, 216, 255)"
+      >
+        <div class="me-5 fs-4">
+          <span>Get connected with us on social networks:</span>
+        </div>
+
+        <div class="social-icons">
+          <a
+            href="https://example.com"
+            class="text-white me-4"
+            style="text-decoration: none"
+          >
+            <img class="scl-icns" src="src/fb-icon.png" alt="Facebook" />
+          </a>
+          <a
+            href="https://example.com"
+            class="text-white me-4"
+            style="text-decoration: none"
+          >
+            <img class="scl-icns" src="src/x-icon.png" alt="X" />
+          </a>
+          <a
+            href="https://example.com"
+            class="text-white me-4"
+            style="text-decoration: none"
+          >
+            <img class="scl-icns" src="src/ig-icon.png" alt="Instagram" />
+          </a>
+          <a
+            href="https://example.com"
+            class="text-white me-4"
+            style="text-decoration: none"
+          >
+            <img class="scl-icns" src="src/tt-icon.png" alt="Tiktok" />
+          </a>
+        </div>
+      </section>
+
+      <section class="">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Team Kalabaw</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p>A team of four.</p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold">Contact Us</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p><i class="fas fa-home mr-3"></i> San Mateo, Rizal, PH</p>
+              <p><i class="fas fa-envelope mr-3"></i> kalabaw.info@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> +63 949 358 2343</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <footer
+      class="text-center text-white bg-dark"
+      style="padding: 1rem; position: relative; z-index: 10"
+    >
+      <div class="container">
+        <p>&copy; 2025 kalabaw. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Modal 1 -->
+    <div
+      class="modal fade"
+      id="featureModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Controls</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            The control button in Space Invaders performs a simple but vital
+            role: It allows the player easily to move their laser cannon (the
+            player's "character") laterally left and right by shifting It
+            horizontally at the base of the screen. For you to be able to shoot
+            your laser cannon, you need to tap the <b>spacebar</b>, and this
+            helps you to shoot the enemies’ spaceship according to your
+            calculation. The most effective strategy for the survival and attack
+            positioning of the player against the alien formation is this simple
+            but vital mechanic that is already entered in our game. Also, it
+            helps the player's "character" to hide in the barriers and wait for
+            the right moment to shoot the enemies with the laser cannon.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary btn-mdl"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div
+      class="modal fade"
+      id="featureModal3"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Lives System
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            Space Invaders is a fixed shooter in which the player moves a
+            spaceship laser cannon referred to as a "Laser Base" horizontally
+            across the bottom of the screen and fires at a group of the titular
+            alien invaders overhead. The invaders begin as six rows of the
+            amount differs in some versions that move left and right as a group,
+            advancing on the shooter by shifting downward each time they reach a
+            screen edge. The goal is to eliminate all the invaders by shooting
+            them. Regardless of 3 lives remaining the player has the game ends
+            if the aliens reach the bottom of the screen the aliens attempt to
+            destroy the players cannon by firing projectiles the laser cannon is
+            partially protected by stationary defense bunkers that are gradually
+            destroyed from above by the invaders the bottom will be destroyed if
+            the player fires when beneath one.
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary btn-mdl"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
